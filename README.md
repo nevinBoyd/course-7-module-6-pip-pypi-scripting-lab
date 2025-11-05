@@ -146,3 +146,15 @@ After completing this lab, you will:
 ✅ Structure projects for portability and collaboration
 
 These scripting and packaging skills are essential for building automation tools and working in modern Python development workflows.
+
+---
+
+## Developer Notes
+
+The purpose of this lab was to automate a simple logging workflow using Python scripting and a pip-installed package.
+
+I implemented a logging function, added a data-fetching utility, and created a script to run the automation:
+
+- `generate_log()` (in `lib/generate_log.py`) validates input, creates a timestamped log file, and writes each entry.
+- `fetch_data()` (in `lib/fetch_data.py`) retrieves JSON data from a public API using `requests`.
+- `run.py` serves as the entry point, calling both functions to fetch data and generate the log.
